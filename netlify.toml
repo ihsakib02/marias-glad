@@ -1,0 +1,15 @@
+[build]
+  publish = "."
+  # No build command is required: this is a plain static HTML/CSS/JS site.
+
+[build.environment]
+  # Keep secrets out of frontend files. Add any future server-side secrets
+  # through Netlify's environment variable UI, not here.
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"

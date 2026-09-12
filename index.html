@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Maria's Glad — আপনার পছন্দের স্বাদ, সাইজ ও ডিজাইনের কেক অর্ডার করুন।">
+  <meta property="og:title" content="Maria's Glad">
+  <meta property="og:description" content="Premium cakes made for memorable moments.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=80">
+  <meta name="theme-color" content="#f6e8eb">
+  <title>Maria's Glad | কেক, যা স্মৃতিকে আরও মিষ্টি করে</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">মূল কনটেন্টে যান</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Maria's Glad home">
+        <span class="brand-mark">MG</span>
+        <span class="brand-name">Maria's Glad</span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="প্রধান নেভিগেশন">
+        <a href="#home" data-i18n="nav.home">হোম</a>
+        <a href="#cakes" data-i18n="nav.cakes">কেকসমূহ</a>
+        <a href="#how-to-order" data-i18n="nav.howToOrder">অর্ডার করার নিয়ম</a>
+        <a href="#facebook" data-i18n="nav.facebook">Facebook</a>
+        <a href="#contact" data-i18n="nav.contact">যোগাযোগ</a>
+        <button class="language-btn" id="language-toggle" type="button">English</button>
+        <a class="nav-order-btn" href="#order-builder" data-i18n="nav.orderNow">অর্ডার করুন</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Maria's Glad</p>
+          <h1 data-i18n="hero.title">আপনার আনন্দকে আরও মিষ্টি করে তুলুন।</h1>
+          <p class="hero-text" data-i18n="hero.text">আপনার পছন্দের স্বাদ, সাইজ ও ডিজাইন বেছে নিয়ে সহজেই অর্ডার তৈরি করুন।</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#cakes" data-i18n="hero.browse">কেক দেখুন</a>
+            <a class="btn btn-secondary" href="#how-to-order" data-i18n="hero.how">কীভাবে অর্ডার করবেন?</a>
+          </div>
+          <div class="hero-note">
+            <span class="dot"></span>
+            <span data-i18n="hero.note">অর্ডার নিশ্চিত হবে Messenger-এ</span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="hero-image-frame">
+            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1100&q=85"
+                 alt="সাজানো কেকের নমুনা" fetchpriority="high">
+          </div>
+          <div class="floating-card">
+            <span class="floating-label" data-i18n="hero.cardLabel">Made for your moments</span>
+            <strong data-i18n="hero.cardTitle">ভালোবাসা, স্বাদ আর সুন্দর ডিজাইন</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="process-strip">
+      <div class="container process-grid">
+        <div class="process-item"><span>01</span><p data-i18n="process.1">কেক বাছাই</p></div>
+        <div class="process-item"><span>02</span><p data-i18n="process.2">পছন্দ নির্বাচন</p></div>
+        <div class="process-item"><span>03</span><p data-i18n="process.3">অর্ডার সামারি তৈরি</p></div>
+        <div class="process-item"><span>04</span><p data-i18n="process.4">Messenger-এ নিশ্চিত</p></div>
+      </div>
+    </section>
+
+    <section class="section cakes-section" id="cakes">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow" data-i18n="cakes.eyebrow">Cake Collection</p>
+            <h2 data-i18n="cakes.title">আপনার পছন্দের কেক খুঁজে নিন</h2>
+          </div>
+          <p data-i18n="cakes.subtitle">কেক বেছে নিয়ে “অর্ডার করুন” চাপুন।</p>
+        </div>
+
+        <div class="filter-row" id="category-filters" aria-label="কেকের ক্যাটাগরি">
+          <button class="filter-btn active" type="button" data-category="all" data-i18n="filters.all">সব</button>
+          <button class="filter-btn" type="button" data-category="birthday" data-i18n="filters.birthday">জন্মদিন</button>
+          <button class="filter-btn" type="button" data-category="custom" data-i18n="filters.custom">কাস্টম</button>
+        </div>
+
+        <div class="products-grid" id="products-grid" aria-live="polite">
+          <div class="loading-state" data-i18n="common.loading">কেক লোড হচ্ছে...</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section order-section" id="order-builder">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow" data-i18n="order.eyebrow">Order Builder</p>
+          <h2 data-i18n="order.title">আপনার কেকটি নিজের মতো করে তৈরি করুন</h2>
+          <p data-i18n="order.subtitle">আপনার পছন্দগুলো বেছে নিন। দাম সঙ্গে সঙ্গে আপডেট হবে।</p>
+        </div>
+
+        <div class="order-layout">
+          <form class="order-form card reveal" id="order-form">
+            <div class="form-section">
+              <h3>01. <span data-i18n="order.cake">কেক</span></h3>
+              <label for="cake-select" data-i18n="form.cakeLabel">কেক বেছে নিন</label>
+              <select id="cake-select" name="cake" required></select>
+            </div>
+
+            <div class="form-section">
+              <h3>02. <span data-i18n="order.flavor">স্বাদ</span></h3>
+              <label for="flavor-select" data-i18n="form.flavorLabel">ফ্লেভার</label>
+              <select id="flavor-select" name="flavor" required></select>
+            </div>
+
+            <div class="form-section">
+              <h3>03. <span data-i18n="order.size">সাইজ</span></h3>
+              <label for="size-select" data-i18n="form.sizeLabel">সাইজ</label>
+              <select id="size-select" name="size" required></select>
+            </div>
+
+            <div class="form-section">
+              <h3>04. <span data-i18n="order.filling">ফিলিং</span></h3>
+              <label for="filling-select" data-i18n="form.fillingLabel">ফিলিং</label>
+              <select id="filling-select" name="filling" required></select>
+            </div>
+
+            <div class="form-section">
+              <h3>05. <span data-i18n="order.decoration">ডেকোরেশন</span></h3>
+              <label for="decoration-select" data-i18n="form.decorationLabel">ডেকোরেশন</label>
+              <select id="decoration-select" name="decoration" required></select>
+            </div>
+
+            <div class="form-section form-grid">
+              <div>
+                <label for="cake-message" data-i18n="form.message">কেকের মেসেজ</label>
+                <input id="cake-message" name="message" type="text" placeholder="Happy Birthday">
+              </div>
+              <div>
+                <label for="customer-name" data-i18n="form.name">আপনার নাম</label>
+                <input id="customer-name" name="customerName" type="text" placeholder="আপনার নাম">
+              </div>
+            </div>
+
+            <div class="form-section">
+              <label for="special-instructions" data-i18n="form.instructions">বিশেষ নির্দেশনা</label>
+              <textarea id="special-instructions" name="instructions" rows="4" placeholder="যেমন: Pink & white design, কম মিষ্টি ইত্যাদি"></textarea>
+            </div>
+
+            <p class="form-note" data-i18n="form.note">চূড়ান্ত মূল্য ও ডেলিভারি সংক্রান্ত তথ্য Messenger-এ নিশ্চিত করা হবে।</p>
+          </form>
+
+          <aside class="summary-card reveal" aria-live="polite">
+            <div class="summary-top">
+              <p class="eyebrow" data-i18n="summary.eyebrow">Order Summary</p>
+              <h3 data-i18n="summary.title">আপনার অর্ডার</h3>
+            </div>
+
+            <div class="summary-list" id="summary-list"></div>
+
+            <div class="price-box">
+              <span data-i18n="summary.estimated">আনুমানিক মূল্য</span>
+              <strong id="estimated-price">৳ ০</strong>
+              <small data-i18n="summary.confirm">Final price will be confirmed on Messenger.</small>
+            </div>
+
+            <div class="summary-actions">
+              <button class="btn btn-secondary full-width" id="copy-summary" type="button" data-i18n="summary.copy">সামারি কপি করুন</button>
+              <a class="btn btn-primary full-width" id="messenger-order" href="#" target="_blank" rel="noopener" data-i18n="summary.messenger">Messenger-এ অর্ডার নিশ্চিত করুন</a>
+            </div>
+            <p class="copy-status" id="copy-status" role="status"></p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section how-section" id="how-to-order">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow" data-i18n="how.eyebrow">Simple Process</p>
+          <h2 data-i18n="how.title">কীভাবে অর্ডার করবেন?</h2>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card reveal"><span>01</span><h3 data-i18n="how.1.title">কেক বাছাই করুন</h3><p data-i18n="how.1.text">আপনার পছন্দের কেকটি বেছে নিন।</p></article>
+          <article class="step-card reveal"><span>02</span><h3 data-i18n="how.2.title">আপনার পছন্দ দিন</h3><p data-i18n="how.2.text">স্বাদ, সাইজ, ফিলিং ও ডেকোরেশন ঠিক করুন।</p></article>
+          <article class="step-card reveal"><span>03</span><h3 data-i18n="how.3.title">অর্ডার সামারি তৈরি করুন</h3><p data-i18n="how.3.text">আপনার তথ্য ও আনুমানিক মূল্য দেখে নিন।</p></article>
+          <article class="step-card reveal"><span>04</span><h3 data-i18n="how.4.title">Messenger-এ পাঠিয়ে নিশ্চিত করুন</h3><p data-i18n="how.4.text">সামারি কপি করে Messenger-এ চূড়ান্তভাবে নিশ্চিত করুন।</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section">
+      <div class="container about-grid">
+        <div class="about-image reveal">
+          <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=1000&q=80" alt="সুন্দরভাবে সাজানো ডেজার্ট" loading="lazy">
+        </div>
+        <div class="about-copy reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">About Maria's Glad</p>
+          <h2 data-i18n="about.title">কেক শুধু খাবার নয়, একটি সুন্দর স্মৃতি।</h2>
+          <p data-i18n="about.text">সুন্দর ডিজাইন, ভালো স্বাদ আর আপনার নিজের পছন্দ—এই তিনটি মিলেই তৈরি হয় এমন একটি কেক, যেটি বিশেষ দিনের গল্পের অংশ হয়ে থাকে।</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section facebook-section" id="facebook">
+      <div class="container social-card reveal">
+        <div>
+          <p class="eyebrow">Facebook</p>
+          <h2 data-i18n="facebook.title">আমাদের Facebook-এর সর্বশেষ পোস্ট</h2>
+          <p data-i18n="facebook.text">নতুন কেক, ডিজাইন ও অফার দেখতে আমাদের Facebook Page দেখুন।</p>
+        </div>
+        <a class="btn btn-primary" id="facebook-link" href="#" target="_blank" rel="noopener" data-i18n="facebook.button">Facebook Page দেখুন</a>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+          <h2 data-i18n="contact.title">যোগাযোগ করুন</h2>
+        </div>
+        <div class="contact-grid">
+          <a class="contact-card reveal" id="contact-messenger" href="#" target="_blank" rel="noopener">
+            <span class="contact-icon">M</span>
+            <strong data-i18n="contact.messenger">Messenger</strong>
+            <span data-i18n="contact.messengerText">অর্ডার ও দ্রুত যোগাযোগ</span>
+          </a>
+          <a class="contact-card reveal" id="contact-facebook" href="#" target="_blank" rel="noopener">
+            <span class="contact-icon">f</span>
+            <strong>Facebook</strong>
+            <span data-i18n="contact.facebookText">আমাদের Page দেখুন</span>
+          </a>
+          <a class="contact-card reveal" id="contact-phone" href="#">
+            <span class="contact-icon">T</span>
+            <strong data-i18n="contact.phone">Phone</strong>
+            <span id="phone-display">Placeholder</span>
+          </a>
+          <div class="contact-card reveal">
+            <span class="contact-icon">A</span>
+            <strong data-i18n="contact.address">Address</strong>
+            <span id="address-display">Placeholder</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">Maria's Glad</div>
+        <p data-i18n="footer.tagline">কেক, যা স্মৃতিকে আরও মিষ্টি করে।</p>
+      </div>
+      <p>© <span id="current-year"></span> Maria's Glad</p>
+    </div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
