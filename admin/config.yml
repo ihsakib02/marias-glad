@@ -9,7 +9,7 @@
 
 backend:
   name: github
-  repo: YOUR_GITHUB_USERNAME/marias-glad
+  repo: ihsakib02/marias-glad
   branch: main
 
 media_folder: "assets/uploads"
