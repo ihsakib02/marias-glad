@@ -5,8 +5,8 @@
 
 const SITE_CONFIG = {
   businessName: "Maria's Glad",
-  messengerUrl: "https://m.me/YOUR_PAGE_USERNAME",
-  facebookUrl: "https://www.facebook.com/YOUR_PAGE_USERNAME",
+  messengerUrl: "https://m.me/mariyasglad",
+  facebookUrl: "https://www.facebook.com/mariyasglad",
   phone: "+880 1XXXXXXXXX",
   address: "আপনার ব্যবসার ঠিকানা এখানে দিন",
   currency: "৳"
