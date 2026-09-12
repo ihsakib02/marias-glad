@@ -14,7 +14,7 @@ const SITE_CONFIG = {
 
 const translations = {
   bn: {
-    nav: { home: "হোম", cakes: "কেকসমূহ", howToOrder: "অর্ডার করার নিয়ম", facebook: "Facebook", contact: "যোগাযোগ", orderNow: "অর্ডার করুন" },
+    nav: { home: "হোম", cakes: "কেকসমূহ", gallery: "গ্যালারি", howToOrder: "অর্ডার করার নিয়ম", facebook: "Facebook", contact: "যোগাযোগ", orderNow: "অর্ডার করুন" },
     hero: {
       eyebrow: "Maria's Glad",
       title: "আপনার আনন্দকে আরও মিষ্টি করে তুলুন।",
@@ -25,16 +25,16 @@ const translations = {
     process: { 1: "কেক বাছাই", 2: "পছন্দ নির্বাচন", 3: "অর্ডার সামারি তৈরি", 4: "Messenger-এ নিশ্চিত" },
     cakes: { eyebrow: "Cake Collection", title: "আপনার পছন্দের কেক খুঁজে নিন", subtitle: "কেক বেছে নিয়ে “অর্ডার করুন” চাপুন।" },
     filters: { all: "সব", birthday: "জন্মদিন", custom: "কাস্টম" },
-    common: { loading: "কেক লোড হচ্ছে...", noProducts: "এই ক্যাটাগরিতে এখন কোনো কেক নেই।" },
-    order: { eyebrow: "Order Builder", title: "আপনার কেকটি নিজের মতো করে তৈরি করুন", subtitle: "আপনার পছন্দগুলো বেছে নিন। দাম সঙ্গে সঙ্গে আপডেট হবে.", cake: "কেক", flavor: "স্বাদ", size: "সাইজ", filling: "ফিলিং", decoration: "ডেকোরেশন" },
+    common: { loading: "কেক লোড হচ্ছে...", noProducts: "এই ক্যাটাগরিতে এখন কোনো কেক নেই।", noGallery: "এখনো কোনো গ্যালারি ছবি যোগ করা হয়নি।" },
+    order: { eyebrow: "Order Builder", title: "আপনার কেকটি নিজের মতো করে তৈরি করুন", subtitle: "আপনার পছন্দগুলো বেছে নিন। দাম সঙ্গে সঙ্গে আপডেট হবে.", cakeFlavor: "কেক ফ্লেভার", size: "সাইজ", filling: "ফিলিং", decoration: "ডেকোরেশন" },
     form: {
-      cakeLabel: "কেক বেছে নিন", flavorLabel: "ফ্লেভার", sizeLabel: "সাইজ", fillingLabel: "ফিলিং", decorationLabel: "ডেকোরেশন",
+      cakeFlavorLabel: "কেক ও ফ্লেভার বেছে নিন", sizeLabel: "সাইজ", fillingLabel: "ফিলিং", decorationLabel: "ডেকোরেশন",
       message: "কেকের মেসেজ", name: "আপনার নাম", instructions: "বিশেষ নির্দেশনা",
       note: "চূড়ান্ত মূল্য ও ডেলিভারি সংক্রান্ত তথ্য Messenger-এ নিশ্চিত করা হবে।"
     },
     summary: {
       eyebrow: "Order Summary", title: "আপনার অর্ডার", estimated: "আনুমানিক মূল্য",
-      confirm: "Final price will be confirmed on Messenger.", copy: "সামারি কপি করুন", messenger: "Messenger-এ অর্ডার নিশ্চিত করুন"
+      confirm: "Final price will be confirmed on Messenger.", copy: "সামারি কপি করুন", image: "ছবি ডাউনলোড করুন", pdf: "PDF ডাউনলোড করুন", messenger: "Messenger-এ অর্ডার নিশ্চিত করুন"
     },
     how: {
       eyebrow: "Simple Process", title: "কীভাবে অর্ডার করবেন?",
@@ -48,6 +48,7 @@ const translations = {
       text: "সুন্দর ডিজাইন, ভালো স্বাদ আর আপনার নিজের পছন্দ—এই তিনটি মিলেই তৈরি হয় এমন একটি কেক, যেটি বিশেষ দিনের গল্পের অংশ হয়ে থাকে।"
     },
     facebook: { title: "আমাদের Facebook-এর সর্বশেষ পোস্ট", text: "নতুন কেক, ডিজাইন ও অফার দেখতে আমাদের Facebook Page দেখুন।", button: "Facebook Page দেখুন" },
+    gallery: { eyebrow: "Cake Gallery", title: "আমাদের কেক গ্যালারি", subtitle: "আমাদের তৈরি করা কেকের কিছু ডিজাইন দেখে আপনার পছন্দেরটি বেছে নিন।" },
     contact: {
       eyebrow: "Contact", title: "যোগাযোগ করুন", messenger: "Messenger", messengerText: "অর্ডার ও দ্রুত যোগাযোগ",
       facebookText: "আমাদের Page দেখুন", phone: "Phone", address: "Address"
@@ -58,7 +59,7 @@ const translations = {
     alerts: { copied: "সামারি কপি হয়েছে।", copyFailed: "কপি করা যায়নি—সামারিটি ম্যানুয়ালি কপি করুন।" }
   },
   en: {
-    nav: { home: "Home", cakes: "Cakes", howToOrder: "How to Order", facebook: "Facebook", contact: "Contact", orderNow: "Order Now" },
+    nav: { home: "Home", cakes: "Cakes", gallery: "Gallery", howToOrder: "How to Order", facebook: "Facebook", contact: "Contact", orderNow: "Order Now" },
     hero: {
       eyebrow: "Maria's Glad",
       title: "Make your moments a little sweeter.",
@@ -69,16 +70,16 @@ const translations = {
     process: { 1: "Choose a cake", 2: "Select preferences", 3: "Create order summary", 4: "Confirm on Messenger" },
     cakes: { eyebrow: "Cake Collection", title: "Find your perfect cake", subtitle: "Choose a cake and press “Order Now”." },
     filters: { all: "All", birthday: "Birthday", custom: "Custom" },
-    common: { loading: "Loading cakes...", noProducts: "No cakes are available in this category right now." },
-    order: { eyebrow: "Order Builder", title: "Build your cake your way", subtitle: "Choose your preferences and watch the estimated price update.", cake: "Cake", flavor: "Flavor", size: "Size", filling: "Filling", decoration: "Decoration" },
+    common: { loading: "Loading cakes...", noProducts: "No cakes are available in this category right now.", noGallery: "No gallery images have been added yet." },
+    order: { eyebrow: "Order Builder", title: "Build your cake your way", subtitle: "Choose your preferences and watch the estimated price update.", cakeFlavor: "Cake Flavor", size: "Size", filling: "Filling", decoration: "Decoration" },
     form: {
-      cakeLabel: "Choose a cake", flavorLabel: "Flavor", sizeLabel: "Size", fillingLabel: "Filling", decorationLabel: "Decoration",
+      cakeFlavorLabel: "Choose cake and flavor", sizeLabel: "Size", fillingLabel: "Filling", decorationLabel: "Decoration",
       message: "Cake message", name: "Your name", instructions: "Special instructions",
       note: "Final price and delivery details will be confirmed on Messenger."
     },
     summary: {
       eyebrow: "Order Summary", title: "Your order", estimated: "Estimated Price",
-      confirm: "Final price will be confirmed on Messenger.", copy: "Copy Summary", messenger: "Confirm on Messenger"
+      confirm: "Final price will be confirmed on Messenger.", copy: "Copy Summary", image: "Download Image", pdf: "Download PDF", messenger: "Confirm on Messenger"
     },
     how: {
       eyebrow: "Simple Process", title: "How to Order?",
@@ -92,6 +93,7 @@ const translations = {
       text: "Beautiful design, good taste and your own preferences come together to make a cake that feels personal to the moment."
     },
     facebook: { title: "Our latest Facebook posts", text: "Visit our Facebook Page for new cakes, designs and offers.", button: "Visit Facebook Page" },
+    gallery: { eyebrow: "Cake Gallery", title: "Our Cake Gallery", subtitle: "Browse some of our cake designs and find inspiration for your order." },
     contact: {
       eyebrow: "Contact", title: "Get in touch", messenger: "Messenger", messengerText: "Orders and quick contact",
       facebookText: "Visit our Page", phone: "Phone", address: "Address"
@@ -134,6 +136,7 @@ function applyTranslations() {
   $("#language-toggle").textContent = currentLanguage === "bn" ? "English" : "বাংলা";
   renderProducts();
   renderOrderOptions();
+  loadGallery();
   updateSummary();
 }
 
@@ -150,6 +153,37 @@ async function loadProducts() {
   } catch (error) {
     console.error(error);
     $("#products-grid").innerHTML = `<div class="loading-state">${translations[currentLanguage].common.noProducts}</div>`;
+  }
+}
+
+async function loadGallery() {
+  const grid = $("#gallery-grid");
+  if (!grid) return;
+
+  try {
+    const response = await fetch("content/gallery.json", { cache: "no-store" });
+    if (!response.ok) throw new Error("Gallery file could not be loaded.");
+    const data = await response.json();
+    const galleryItems = data.gallery || [];
+
+    if (!galleryItems.length) {
+      grid.innerHTML = `<div class="loading-state">${escapeHtml(translations[currentLanguage].common.noGallery)}</div>`;
+      return;
+    }
+
+    grid.innerHTML = galleryItems.map((item) => {
+      const title = currentLanguage === "bn" ? (item.titleBn || "") : (item.titleEn || "");
+      const alt = currentLanguage === "bn" ? (item.altBn || title) : (item.altEn || title);
+      return `
+        <figure class="gallery-item reveal is-visible">
+          <img src="${escapeHtml(item.image)}" alt="${escapeHtml(alt)}" loading="lazy">
+          ${title ? `<figcaption>${escapeHtml(title)}</figcaption>` : ""}
+        </figure>
+      `;
+    }).join("");
+  } catch (error) {
+    console.error(error);
+    grid.innerHTML = `<div class="loading-state">${escapeHtml(translations[currentLanguage].common.noGallery)}</div>`;
   }
 }
 
@@ -210,15 +244,37 @@ function populateSelect(selectId, items, placeholder) {
 }
 
 function renderOrderOptions() {
-  const product = products.find((item) => item.id === selectedProductId) || products[0];
+  const product = products.find((item) => item.id === selectedProductId) || products.find((item) => item.available) || products[0];
   if (!product) return;
 
-  $("#cake-select").innerHTML = products.filter((p) => p.available).map((item) =>
-    `<option value="${item.id}" ${item.id === product.id ? "selected" : ""}>${escapeHtml(label(item))}</option>`
+  selectedProductId = product.id;
+
+  // Cake + flavor are intentionally merged into one customer-facing option.
+  const cakeFlavorOptions = [];
+  products.filter((p) => p.available).forEach((item) => {
+    (item.flavors || []).forEach((flavor) => {
+      cakeFlavorOptions.push({
+        id: `${item.id}::${flavor.id}`,
+        productId: item.id,
+        flavorId: flavor.id,
+        nameBn: `${item.nameBn} — ${flavor.nameBn}`,
+        nameEn: `${item.nameEn} — ${flavor.nameEn}`,
+        extra: flavor.extra || 0
+      });
+    });
+  });
+
+  const selectedFlavor = cakeFlavorOptions.find(
+    (option) => option.productId === product.id
+  ) || cakeFlavorOptions[0];
+
+  $("#cake-flavor-select").innerHTML = cakeFlavorOptions.map((option) =>
+    `<option value="${escapeHtml(option.id)}" ${option.id === selectedFlavor?.id ? "selected" : ""}>
+      ${escapeHtml(currentLanguage === "bn" ? option.nameBn : option.nameEn)}${option.extra ? ` (+${formatCurrency(option.extra)})` : ""}
+    </option>`
   ).join("");
 
   const emptyText = currentLanguage === "bn" ? "কোনো অপশন নেই" : "No options";
-  populateSelect("#flavor-select", product.flavors || [], emptyText);
   populateSelect("#size-select", product.sizes || [], emptyText);
   populateSelect("#filling-select", product.fillings || [], emptyText);
   populateSelect("#decoration-select", product.decorations || [], emptyText);
@@ -242,15 +298,24 @@ function getSelectedOption(list, id) {
 }
 
 function getOrderState() {
-  const product = products.find((item) => item.id === $("#cake-select")?.value) || products.find((item) => item.id === selectedProductId);
+  const selectedValue = $("#cake-flavor-select")?.value || "";
+  const [productId, flavorId] = selectedValue.split("::");
+
+  const product = products.find((item) => item.id === productId)
+    || products.find((item) => item.id === selectedProductId)
+    || products[0];
+
   if (!product) return null;
 
-  const flavor = getSelectedOption(product.flavors, $("#flavor-select")?.value);
+  const flavor = getSelectedOption(product.flavors, flavorId);
   const size = getSelectedOption(product.sizes, $("#size-select")?.value);
   const filling = getSelectedOption(product.fillings, $("#filling-select")?.value);
   const decoration = getSelectedOption(product.decorations, $("#decoration-select")?.value);
 
-  const price = (size?.price ?? product.basePrice) + (flavor?.extra || 0) + (filling?.extra || 0) + (decoration?.extra || 0);
+  const price = (size?.price ?? product.basePrice)
+    + (flavor?.extra || 0)
+    + (filling?.extra || 0)
+    + (decoration?.extra || 0);
 
   return {
     product, flavor, size, filling, decoration,
@@ -335,6 +400,155 @@ function showToast(message) {
   showToast.timer = window.setTimeout(() => toast.classList.remove("show"), 2200);
 }
 
+async function prepareMessengerOrder(event) {
+  event.preventDefault();
+
+  const summary = buildSummaryText();
+  if (!summary) return;
+
+  try {
+    await navigator.clipboard.writeText(summary);
+    showToast(currentLanguage === "bn"
+      ? "সামারি কপি হয়েছে—Messenger-এ পেস্ট করে পাঠান।"
+      : "Summary copied—paste it into Messenger.");
+  } catch {
+    showToast(currentLanguage === "bn"
+      ? "Messenger খুলছি। সামারিটি কপি করা যায়নি।"
+      : "Opening Messenger. The summary could not be copied.");
+  }
+
+  window.open(SITE_CONFIG.messengerUrl, "_blank", "noopener");
+}
+
+function createSummaryCanvas() {
+  const order = getOrderState();
+  if (!order) return null;
+
+  const t = translations[currentLanguage].summaryLabels;
+  const canvas = document.createElement("canvas");
+  const width = 1200;
+  const padding = 70;
+  const lineHeight = 58;
+  const rows = [
+    [t.customer, order.customerName || "—"],
+    [t.cake, label(order.product)],
+    [t.flavor, order.flavor ? label(order.flavor) : "—"],
+    [t.size, order.size ? label(order.size) : "—"],
+    [t.filling, order.filling ? label(order.filling) : "—"],
+    [t.decoration, order.decoration ? label(order.decoration) : "—"],
+    [t.message, order.message || "—"],
+    [t.instructions, order.instructions || "—"],
+    [t.estimated, formatCurrency(order.price)]
+  ];
+
+  const height = 260 + rows.length * lineHeight + 80;
+  canvas.width = width;
+  canvas.height = height;
+
+  const ctx = canvas.getContext("2d");
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(0, 0, width, height);
+
+  ctx.strokeStyle = "#e9e4e3";
+  ctx.lineWidth = 2;
+  ctx.strokeRect(25, 25, width - 50, height - 50);
+
+  ctx.fillStyle = "#34383d";
+  ctx.font = '700 42px "Noto Sans Bengali", sans-serif';
+  ctx.fillText(SITE_CONFIG.businessName, padding, 105);
+
+  ctx.fillStyle = "#8c606b";
+  ctx.font = '600 24px "Noto Sans Bengali", sans-serif';
+  ctx.fillText(currentLanguage === "bn" ? "অর্ডার সামারি" : "Order Summary", padding, 150);
+
+  let y = 220;
+  rows.forEach(([key, value]) => {
+    ctx.fillStyle = "#73777c";
+    ctx.font = '600 22px "Noto Sans Bengali", sans-serif';
+    ctx.fillText(String(key), padding, y);
+
+    ctx.fillStyle = "#34383d";
+    ctx.font = '600 23px "Noto Sans Bengali", sans-serif';
+
+    const maxWidth = width - padding * 2 - 270;
+    const text = String(value);
+    let line = "";
+    const lines = [];
+
+    for (const word of text.split(" ")) {
+      const test = line ? `${line} ${word}` : word;
+      if (ctx.measureText(test).width > maxWidth && line) {
+        lines.push(line);
+        line = word;
+      } else {
+        line = test;
+      }
+    }
+    if (line) lines.push(line);
+
+    lines.slice(0, 3).forEach((lineText, index) => {
+      ctx.fillText(lineText, width - padding - maxWidth, y + index * 30);
+    });
+
+    y += lineHeight + Math.max(0, lines.length - 1) * 10;
+    ctx.strokeStyle = "#eee9e8";
+    ctx.beginPath();
+    ctx.moveTo(padding, y - 30);
+    ctx.lineTo(width - padding, y - 30);
+    ctx.stroke();
+  });
+
+  ctx.fillStyle = "#73777c";
+  ctx.font = '400 18px "Noto Sans Bengali", sans-serif';
+  ctx.fillText(
+    currentLanguage === "bn"
+      ? "চূড়ান্ত মূল্য Messenger-এ নিশ্চিত করা হবে।"
+      : "Final price will be confirmed on Messenger.",
+    padding,
+    height - 70
+  );
+
+  return canvas;
+}
+
+async function downloadSummaryImage() {
+  if (document.fonts?.ready) await document.fonts.ready;
+  const canvas = createSummaryCanvas();
+  if (!canvas) return;
+
+  const link = document.createElement("a");
+  link.download = "marias-glad-order-summary.png";
+  link.href = canvas.toDataURL("image/png");
+  link.click();
+
+  showToast(currentLanguage === "bn" ? "সামারির ছবি ডাউনলোড হয়েছে।" : "Summary image downloaded.");
+}
+
+async function downloadSummaryPdf() {
+  if (document.fonts?.ready) await document.fonts.ready;
+  const canvas = createSummaryCanvas();
+  if (!canvas) return;
+
+  if (!window.jspdf?.jsPDF) {
+    showToast(currentLanguage === "bn"
+      ? "PDF তৈরি করা যাচ্ছে না। ছবিটি ডাউনলোড করে ব্যবহার করুন।"
+      : "PDF could not be generated. Please use the image download.");
+    return;
+  }
+
+  const { jsPDF } = window.jspdf;
+  const pdf = new jsPDF({ unit: "mm", format: "a4", orientation: "portrait" });
+  const pageWidth = 210;
+  const margin = 10;
+  const imageWidth = pageWidth - margin * 2;
+  const imageHeight = imageWidth * (canvas.height / canvas.width);
+
+  pdf.addImage(canvas.toDataURL("image/png"), "PNG", margin, margin, imageWidth, imageHeight);
+  pdf.save("marias-glad-order-summary.pdf");
+
+  showToast(currentLanguage === "bn" ? "PDF ডাউনলোড হয়েছে।" : "PDF downloaded.");
+}
+
 function setupNavigation() {
   const menuToggle = $("#menu-toggle");
   const nav = $("#site-nav");
@@ -372,13 +586,20 @@ function setupFilters() {
 function setupOrderForm() {
   $("#order-form").addEventListener("input", updateSummary);
   $("#order-form").addEventListener("change", (event) => {
-    if (event.target.id === "cake-select") {
-      selectProduct(event.target.value);
-    } else {
-      updateSummary();
+    if (event.target.id === "cake-flavor-select") {
+      const [productId] = event.target.value.split("::");
+      if (productId) {
+        selectedProductId = productId;
+        renderOrderOptions();
+      }
     }
+    updateSummary();
   });
+
   $("#copy-summary").addEventListener("click", copySummary);
+  $("#download-image").addEventListener("click", downloadSummaryImage);
+  $("#download-pdf").addEventListener("click", downloadSummaryPdf);
+  $("#messenger-order").addEventListener("click", prepareMessengerOrder);
 }
 
 function setupSiteConfig() {
@@ -418,5 +639,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   setupSiteConfig();
   applyTranslations();
   await loadProducts();
+  await loadGallery();
   setupRevealAnimation();
 });

@@ -26,19 +26,22 @@
         <span class="brand-name">Maria's Glad</span>
       </a>
 
-      <button class="menu-toggle" id="menu-toggle" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="site-nav">
-        <span></span><span></span><span></span>
-      </button>
-
       <nav class="site-nav" id="site-nav" aria-label="প্রধান নেভিগেশন">
         <a href="#home" data-i18n="nav.home">হোম</a>
         <a href="#cakes" data-i18n="nav.cakes">কেকসমূহ</a>
+        <a href="#gallery" data-i18n="nav.gallery">গ্যালারি</a>
         <a href="#how-to-order" data-i18n="nav.howToOrder">অর্ডার করার নিয়ম</a>
         <a href="#facebook" data-i18n="nav.facebook">Facebook</a>
         <a href="#contact" data-i18n="nav.contact">যোগাযোগ</a>
+      </nav>
+
+      <div class="header-actions">
         <button class="language-btn" id="language-toggle" type="button">English</button>
         <a class="nav-order-btn" href="#order-builder" data-i18n="nav.orderNow">অর্ডার করুন</a>
-      </nav>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="মেনু খুলুন" aria-expanded="false" aria-controls="site-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </header>
 
@@ -103,6 +106,20 @@
       </div>
     </section>
 
+
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-heading centered reveal">
+          <p class="eyebrow" data-i18n="gallery.eyebrow">Cake Gallery</p>
+          <h2 data-i18n="gallery.title">আমাদের কেক গ্যালারি</h2>
+          <p data-i18n="gallery.subtitle">আমাদের তৈরি করা কেকের কিছু ডিজাইন দেখে আপনার পছন্দেরটি বেছে নিন।</p>
+        </div>
+        <div class="gallery-grid" id="gallery-grid" aria-live="polite">
+          <div class="loading-state" data-i18n="common.loading">কেক লোড হচ্ছে...</div>
+        </div>
+      </div>
+    </section>
+
     <section class="section order-section" id="order-builder">
       <div class="container">
         <div class="section-heading centered reveal">
@@ -114,31 +131,25 @@
         <div class="order-layout">
           <form class="order-form card reveal" id="order-form">
             <div class="form-section">
-              <h3>01. <span data-i18n="order.cake">কেক</span></h3>
-              <label for="cake-select" data-i18n="form.cakeLabel">কেক বেছে নিন</label>
-              <select id="cake-select" name="cake" required></select>
+              <h3>01. <span data-i18n="order.cakeFlavor">কেক ফ্লেভার</span></h3>
+              <label for="cake-flavor-select" data-i18n="form.cakeFlavorLabel">কেক ও ফ্লেভার বেছে নিন</label>
+              <select id="cake-flavor-select" name="cakeFlavor" required></select>
             </div>
 
             <div class="form-section">
-              <h3>02. <span data-i18n="order.flavor">স্বাদ</span></h3>
-              <label for="flavor-select" data-i18n="form.flavorLabel">ফ্লেভার</label>
-              <select id="flavor-select" name="flavor" required></select>
-            </div>
-
-            <div class="form-section">
-              <h3>03. <span data-i18n="order.size">সাইজ</span></h3>
+              <h3>02. <span data-i18n="order.size">সাইজ</span></h3>
               <label for="size-select" data-i18n="form.sizeLabel">সাইজ</label>
               <select id="size-select" name="size" required></select>
             </div>
 
             <div class="form-section">
-              <h3>04. <span data-i18n="order.filling">ফিলিং</span></h3>
+              <h3>03. <span data-i18n="order.filling">ফিলিং</span></h3>
               <label for="filling-select" data-i18n="form.fillingLabel">ফিলিং</label>
               <select id="filling-select" name="filling" required></select>
             </div>
 
             <div class="form-section">
-              <h3>05. <span data-i18n="order.decoration">ডেকোরেশন</span></h3>
+              <h3>04. <span data-i18n="order.decoration">ডেকোরেশন</span></h3>
               <label for="decoration-select" data-i18n="form.decorationLabel">ডেকোরেশন</label>
               <select id="decoration-select" name="decoration" required></select>
             </div>
@@ -178,6 +189,8 @@
 
             <div class="summary-actions">
               <button class="btn btn-secondary full-width" id="copy-summary" type="button" data-i18n="summary.copy">সামারি কপি করুন</button>
+              <button class="btn btn-secondary full-width" id="download-image" type="button" data-i18n="summary.image">ছবি ডাউনলোড করুন</button>
+              <button class="btn btn-secondary full-width" id="download-pdf" type="button" data-i18n="summary.pdf">PDF ডাউনলোড করুন</button>
               <a class="btn btn-primary full-width" id="messenger-order" href="#" target="_blank" rel="noopener" data-i18n="summary.messenger">Messenger-এ অর্ডার নিশ্চিত করুন</a>
             </div>
             <p class="copy-status" id="copy-status" role="status"></p>
@@ -269,6 +282,7 @@
 
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="script.js"></script>
 </body>
 </html>

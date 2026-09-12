@@ -1,0 +1,36 @@
+{
+  "gallery": [
+    {
+      "id": "gallery-01",
+      "titleBn": "চকলেট কেক",
+      "titleEn": "Chocolate Cake",
+      "image": "/assets/uploads/gallery-placeholder-01.svg",
+      "altBn": "চকলেট কেকের গ্যালারি ছবি",
+      "altEn": "Chocolate cake gallery image"
+    },
+    {
+      "id": "gallery-02",
+      "titleBn": "ভ্যানিলা কেক",
+      "titleEn": "Vanilla Cake",
+      "image": "/assets/uploads/gallery-placeholder-02.svg",
+      "altBn": "ভ্যানিলা কেকের গ্যালারি ছবি",
+      "altEn": "Vanilla cake gallery image"
+    },
+    {
+      "id": "gallery-03",
+      "titleBn": "ফ্রুট কেক",
+      "titleEn": "Fruit Cake",
+      "image": "/assets/uploads/gallery-placeholder-03.svg",
+      "altBn": "ফ্রুট কেকের গ্যালারি ছবি",
+      "altEn": "Fruit cake gallery image"
+    },
+    {
+      "id": "gallery-04",
+      "titleBn": "কাস্টম কেক",
+      "titleEn": "Custom Cake",
+      "image": "/assets/uploads/gallery-placeholder-04.svg",
+      "altBn": "কাস্টম কেকের গ্যালারি ছবি",
+      "altEn": "Custom cake gallery image"
+    }
+  ]
+}

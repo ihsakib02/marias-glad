@@ -306,3 +306,60 @@ Good next upgrades, when the business needs them:
 Decap CMS is intentionally used here without a custom server. If you later need multi-admin roles, audit-heavy workflows, inventory, customer accounts, or a full order database, a headless CMS such as Sanity or a dedicated backend can be considered.
 
 For the current one-admin, small-business product catalogue, keeping the frontend static and the content in Git is easier to understand and maintain.
+
+
+## 14. Requested website updates
+
+### Header / mobile
+
+The Order button and language switch are now outside the hamburger navigation. On mobile they remain visible beside the Maria's Glad brand and menu button.
+
+### Order Builder
+
+The customer-facing builder now uses four main option groups:
+
+1. Cake Flavor
+2. Size
+3. Filling
+4. Decoration
+
+Cake and flavor are merged into one dropdown. The existing product/flavor data structure is preserved, so the current product CMS workflow does not need to be rebuilt.
+
+### Order Summary files
+
+The summary now has:
+
+- Copy Summary
+- Download Image
+- Download PDF
+- Confirm on Messenger
+
+The Messenger button copies the summary first and then opens the configured Messenger URL. A normal static `m.me` link cannot attach a generated file automatically, so the customer can paste the copied summary and attach the downloaded image/PDF if desired.
+
+The PDF is generated as an image-based PDF so Bengali text remains readable without requiring a custom Bengali PDF font.
+
+### Cake Gallery
+
+A new `content/gallery.json` file is connected to Decap CMS.
+
+In `/admin/` you will see:
+
+**Cake Gallery → Gallery Images**
+
+You can upload images, edit titles/alt text, and publish. Uploaded images are stored under `assets/uploads/`.
+
+The gallery is intentionally separate from product data, so it can contain inspiration/design photos that are not necessarily products.
+
+### Replace the gallery placeholders
+
+The included gallery images are lightweight placeholders only. Replace them from:
+
+**Admin → Cake Gallery → Gallery Images**
+
+Then publish.
+
+### PDF dependency
+
+The PDF button uses jsPDF from a CDN. If the CDN is unavailable, the Image download remains available and the site shows a fallback message instead of failing silently.
+
+The public site remains plain HTML/CSS/JavaScript.

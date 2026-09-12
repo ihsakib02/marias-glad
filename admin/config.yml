@@ -84,3 +84,24 @@ collections:
                   - { label: "Bangla Name", name: "nameBn", widget: "string" }
                   - { label: "English Name", name: "nameEn", widget: "string" }
                   - { label: "Extra Price", name: "extra", widget: "number", value_type: "int", min: 0, default: 0 }
+  - name: "gallery"
+    label: "Cake Gallery"
+    description: "Upload and manage cake gallery images."
+    files:
+      - label: "Gallery Images"
+        name: "gallery"
+        file: "content/gallery.json"
+        format: "json"
+        fields:
+          - label: "Gallery"
+            name: "gallery"
+            widget: "list"
+            summary: "{{fields.titleEn}}"
+            fields:
+              - { label: "Gallery ID", name: "id", widget: "string", hint: "Use a stable ID such as gallery-01." }
+              - { label: "Bangla Title", name: "titleBn", widget: "string", required: false }
+              - { label: "English Title", name: "titleEn", widget: "string", required: false }
+              - { label: "Cake Image", name: "image", widget: "image" }
+              - { label: "Bangla Alt Text", name: "altBn", widget: "string", required: false }
+              - { label: "English Alt Text", name: "altEn", widget: "string", required: false }
+
