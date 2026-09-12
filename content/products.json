@@ -1,37 +1,37 @@
 {
   "products": [
     {
-      "id": "chocolate-dream",
-      "nameBn": "চকলেট ড্রিম",
-      "nameEn": "Chocolate Dream",
-      "category": "birthday",
-      "descriptionBn": "রিচ চকলেট কেক, নরম ক্রাম্ব ও মসৃণ চকলেট ফিনিশ।",
+      "decorations": [
+        {
+          "id": "chef-choice",
+          "nameBn": "Chef's Choice",
+          "nameEn": "Chef's Choice",
+          "extra": 0
+        },
+        {
+          "id": "chocolate-decoration",
+          "nameBn": "চকলেট ডেকোরেশন",
+          "nameEn": "Chocolate Decoration",
+          "extra": 150
+        },
+        {
+          "id": "fruit-decoration",
+          "nameBn": "ফ্রুট ডেকোরেশন",
+          "nameEn": "Fruit Decoration",
+          "extra": 200
+        },
+        {
+          "id": "premium-decoration",
+          "nameBn": "প্রিমিয়াম ডেকোরেশন",
+          "nameEn": "Premium Decoration",
+          "extra": 450
+        }
+      ],
       "descriptionEn": "Rich chocolate cake with a soft crumb and smooth chocolate finish.",
-      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
-      "basePrice": 800,
+      "descriptionBn": "রিচ চকলেট কেক, নরম ক্রাম্ব ও মসৃণ চকলেট ফিনিশ।",
       "available": true,
       "badges": [
         "Popular"
-      ],
-      "flavors": [
-        {
-          "id": "chocolate",
-          "nameBn": "চকলেট",
-          "nameEn": "Chocolate",
-          "extra": 0
-        },
-        {
-          "id": "vanilla",
-          "nameBn": "ভ্যানিলা",
-          "nameEn": "Vanilla",
-          "extra": 0
-        },
-        {
-          "id": "red-velvet",
-          "nameBn": "রেড ভেলভেট",
-          "nameEn": "Red Velvet",
-          "extra": 100
-        }
       ],
       "sizes": [
         {
@@ -53,6 +53,7 @@
           "price": 2100
         }
       ],
+      "nameEn": "Chocolate Dream",
       "fillings": [
         {
           "id": "no-extra",
@@ -79,6 +80,33 @@
           "extra": 300
         }
       ],
+      "flavors": [
+        {
+          "id": "chocolate",
+          "nameBn": "চকলেট",
+          "nameEn": "Chocolate",
+          "extra": 0
+        },
+        {
+          "id": "vanilla",
+          "nameBn": "ভ্যানিলা",
+          "nameEn": "Vanilla",
+          "extra": 0
+        },
+        {
+          "id": "red-velvet",
+          "nameBn": "রেড ভেলভেট",
+          "nameEn": "Red Velvet",
+          "extra": 100
+        }
+      ],
+      "nameBn": "চকলেট ড্রিম",
+      "basePrice": 450,
+      "id": "chocolate-dream",
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
+      "category": "birthday"
+    },
+    {
       "decorations": [
         {
           "id": "chef-choice",
@@ -87,57 +115,23 @@
           "extra": 0
         },
         {
-          "id": "chocolate-decoration",
-          "nameBn": "চকলেট ডেকোরেশন",
-          "nameEn": "Chocolate Decoration",
-          "extra": 150
-        },
-        {
           "id": "fruit-decoration",
           "nameBn": "ফ্রুট ডেকোরেশন",
           "nameEn": "Fruit Decoration",
-          "extra": 200
+          "extra": 180
         },
         {
           "id": "premium-decoration",
           "nameBn": "প্রিমিয়াম ডেকোরেশন",
           "nameEn": "Premium Decoration",
-          "extra": 450
+          "extra": 400
         }
-      ]
-    },
-    {
-      "id": "vanilla-cloud",
-      "nameBn": "ভ্যানিলা ক্লাউড",
-      "nameEn": "Vanilla Cloud",
-      "category": "birthday",
-      "descriptionBn": "হালকা ভ্যানিলা স্পঞ্জ, ক্রিমি ফ্রস্টিং ও নরম ফিনিশ।",
+      ],
       "descriptionEn": "Light vanilla sponge with creamy frosting and a soft finish.",
-      "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80",
-      "basePrice": 750,
+      "descriptionBn": "হালকা ভ্যানিলা স্পঞ্জ, ক্রিমি ফ্রস্টিং ও নরম ফিনিশ।",
       "available": true,
       "badges": [
         "New"
-      ],
-      "flavors": [
-        {
-          "id": "vanilla",
-          "nameBn": "ভ্যানিলা",
-          "nameEn": "Vanilla",
-          "extra": 0
-        },
-        {
-          "id": "chocolate",
-          "nameBn": "চকলেট",
-          "nameEn": "Chocolate",
-          "extra": 50
-        },
-        {
-          "id": "red-velvet",
-          "nameBn": "রেড ভেলভেট",
-          "nameEn": "Red Velvet",
-          "extra": 120
-        }
       ],
       "sizes": [
         {
@@ -159,6 +153,7 @@
           "price": 1950
         }
       ],
+      "nameEn": "Vanilla Cloud",
       "fillings": [
         {
           "id": "no-extra",
@@ -179,6 +174,33 @@
           "extra": 280
         }
       ],
+      "flavors": [
+        {
+          "id": "vanilla",
+          "nameBn": "ভ্যানিলা",
+          "nameEn": "Vanilla",
+          "extra": 0
+        },
+        {
+          "id": "chocolate",
+          "nameBn": "চকলেট",
+          "nameEn": "Chocolate",
+          "extra": 50
+        },
+        {
+          "id": "red-velvet",
+          "nameBn": "রেড ভেলভেট",
+          "nameEn": "Red Velvet",
+          "extra": 120
+        }
+      ],
+      "nameBn": "ভ্যানিলা ক্লাউড",
+      "basePrice": 750,
+      "id": "vanilla-cloud",
+      "image": "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?auto=format&fit=crop&w=900&q=80",
+      "category": "birthday"
+    },
+    {
       "decorations": [
         {
           "id": "chef-choice",
@@ -190,48 +212,20 @@
           "id": "fruit-decoration",
           "nameBn": "ফ্রুট ডেকোরেশন",
           "nameEn": "Fruit Decoration",
-          "extra": 180
+          "extra": 220
         },
         {
           "id": "premium-decoration",
           "nameBn": "প্রিমিয়াম ডেকোরেশন",
           "nameEn": "Premium Decoration",
-          "extra": 400
+          "extra": 500
         }
-      ]
-    },
-    {
-      "id": "strawberry-blush",
-      "nameBn": "স্ট্রবেরি ব্লাশ",
-      "nameEn": "Strawberry Blush",
-      "category": "custom",
-      "descriptionBn": "স্ট্রবেরির মিষ্টি স্বাদ আর নরম ব্লাশ টোনের elegant ডিজাইন।",
+      ],
       "descriptionEn": "Sweet strawberry flavor with an elegant blush-toned design.",
-      "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80",
-      "basePrice": 900,
+      "descriptionBn": "স্ট্রবেরির মিষ্টি স্বাদ আর নরম ব্লাশ টোনের elegant ডিজাইন।",
       "available": true,
       "badges": [
         "Bestseller"
-      ],
-      "flavors": [
-        {
-          "id": "strawberry",
-          "nameBn": "স্ট্রবেরি",
-          "nameEn": "Strawberry",
-          "extra": 0
-        },
-        {
-          "id": "vanilla",
-          "nameBn": "ভ্যানিলা",
-          "nameEn": "Vanilla",
-          "extra": 0
-        },
-        {
-          "id": "red-velvet",
-          "nameBn": "রেড ভেলভেট",
-          "nameEn": "Red Velvet",
-          "extra": 100
-        }
       ],
       "sizes": [
         {
@@ -253,6 +247,7 @@
           "price": 2400
         }
       ],
+      "nameEn": "Strawberry Blush",
       "fillings": [
         {
           "id": "no-extra",
@@ -273,6 +268,33 @@
           "extra": 320
         }
       ],
+      "flavors": [
+        {
+          "id": "strawberry",
+          "nameBn": "স্ট্রবেরি",
+          "nameEn": "Strawberry",
+          "extra": 0
+        },
+        {
+          "id": "vanilla",
+          "nameBn": "ভ্যানিলা",
+          "nameEn": "Vanilla",
+          "extra": 0
+        },
+        {
+          "id": "red-velvet",
+          "nameBn": "রেড ভেলভেট",
+          "nameEn": "Red Velvet",
+          "extra": 100
+        }
+      ],
+      "nameBn": "স্ট্রবেরি ব্লাশ",
+      "basePrice": 900,
+      "id": "strawberry-blush",
+      "image": "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?auto=format&fit=crop&w=900&q=80",
+      "category": "custom"
+    },
+    {
       "decorations": [
         {
           "id": "chef-choice",
@@ -281,45 +303,23 @@
           "extra": 0
         },
         {
-          "id": "fruit-decoration",
-          "nameBn": "ফ্রুট ডেকোরেশন",
-          "nameEn": "Fruit Decoration",
-          "extra": 220
+          "id": "chocolate-decoration",
+          "nameBn": "চকলেট ডেকোরেশন",
+          "nameEn": "Chocolate Decoration",
+          "extra": 170
         },
         {
           "id": "premium-decoration",
           "nameBn": "প্রিমিয়াম ডেকোরেশন",
           "nameEn": "Premium Decoration",
-          "extra": 500
+          "extra": 550
         }
-      ]
-    },
-    {
-      "id": "velvet-bloom",
-      "nameBn": "ভেলভেট ব্লুম",
-      "nameEn": "Velvet Bloom",
-      "category": "custom",
-      "descriptionBn": "রেড ভেলভেটের গভীর স্বাদ, ক্রিম চিজ ফ্রস্টিং ও ফুলের touch।",
+      ],
       "descriptionEn": "Deep red velvet flavor, cream cheese frosting and a floral touch.",
-      "image": "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=900&q=80",
-      "basePrice": 1000,
+      "descriptionBn": "রেড ভেলভেটের গভীর স্বাদ, ক্রিম চিজ ফ্রস্টিং ও ফুলের touch।",
       "available": true,
       "badges": [
         "Seasonal"
-      ],
-      "flavors": [
-        {
-          "id": "red-velvet",
-          "nameBn": "রেড ভেলভেট",
-          "nameEn": "Red Velvet",
-          "extra": 0
-        },
-        {
-          "id": "chocolate",
-          "nameBn": "চকলেট",
-          "nameEn": "Chocolate",
-          "extra": 70
-        }
       ],
       "sizes": [
         {
@@ -341,6 +341,7 @@
           "price": 2700
         }
       ],
+      "nameEn": "Velvet Bloom",
       "fillings": [
         {
           "id": "no-extra",
@@ -361,26 +362,25 @@
           "extra": 350
         }
       ],
-      "decorations": [
+      "flavors": [
         {
-          "id": "chef-choice",
-          "nameBn": "Chef's Choice",
-          "nameEn": "Chef's Choice",
+          "id": "red-velvet",
+          "nameBn": "রেড ভেলভেট",
+          "nameEn": "Red Velvet",
           "extra": 0
         },
         {
-          "id": "chocolate-decoration",
-          "nameBn": "চকলেট ডেকোরেশন",
-          "nameEn": "Chocolate Decoration",
-          "extra": 170
-        },
-        {
-          "id": "premium-decoration",
-          "nameBn": "প্রিমিয়াম ডেকোরেশন",
-          "nameEn": "Premium Decoration",
-          "extra": 550
+          "id": "chocolate",
+          "nameBn": "চকলেট",
+          "nameEn": "Chocolate",
+          "extra": 70
         }
-      ]
+      ],
+      "nameBn": "ভেলভেট ব্লুম",
+      "basePrice": 1000,
+      "id": "velvet-bloom",
+      "image": "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=900&q=80",
+      "category": "custom"
     }
   ]
 }
